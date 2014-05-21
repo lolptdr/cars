@@ -1,6 +1,6 @@
 class Car
 	def to_s()
-		"I'm a car! I've driven #{@distance} and have #{@fuel} gallons gas left"
+		"I'm a car! I've driven #{@distance} miles and have #{@fuel} gallons of gas left."
 	end
 
 	def initialize()
@@ -21,7 +21,7 @@ class Car
 
 	def fuel_up()
 		gallons_needed = 10.0 - @fuel
-		puts "You must pay $#{3.5 * gallons_needed}"
+		puts "You must pay $#{3.5 * gallons_needed}."
 		@fuel = 10.0
 	end
 end
